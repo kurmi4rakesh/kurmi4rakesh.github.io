@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Rakesh Kurmi | PMP, Cloud & Database Infrastructure Lead</title>
-<meta name="description" content="PMP-certified technical lead with 14+ years in cloud migration, MSSQL administration and infrastructure engineering.">
+<title>Rakesh Kurmi | PMP, Technical Transition & Migration Delivery Lead</title>
+<meta name="description" content="PMP-certified delivery lead with 14+ years leading Azure/AWS database migrations and IT service transitions for enterprise clients.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -58,104 +58,127 @@ section h2{font-size:clamp(1.7rem,4vw,2.4rem);letter-spacing:-.02em;margin-botto
 .tags li{border:1px solid var(--line);background:var(--surface);padding:5px 12px;border-radius:99px;font-size:.92rem}
 .contact p{max-width:52ch;color:var(--muted);margin:0 0 20px}
 footer{padding:28px 0 40px;color:var(--muted);font-size:.9rem}
-@media (max-width:720px){.job{grid-template-columns:1fr}.stats div{border-right:0;border-bottom:1px solid var(--line)}.bars{grid-template-columns:repeat(30,1fr)}.bars i:nth-child(n+31){display:none}}
+@media (max-width:720px){.old{grid-template-columns:1fr}.step div{border-right:0;border-bottom:1px solid var(--line)}.job{grid-template-columns:1fr}.stats div{border-right:0;border-bottom:1px solid var(--line)}.bars{grid-template-columns:repeat(30,1fr)}.bars i:nth-child(n+31){display:none}}
 @media (prefers-reduced-motion:no-preference){.bars i{animation:up .6s ease-out both;animation-delay:calc(var(--n)*14ms)}@keyframes up{from{transform:scaleY(.1);transform-origin:bottom;opacity:0}}}
+
+.step{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0;border:1px solid var(--line);background:var(--surface);counter-reset:s}
+.step div{padding:20px;border-right:1px solid var(--line)}
+.step div::before{counter-increment:s;content:"0" counter(s);font:800 1.4rem "Bricolage Grotesque",sans-serif;color:var(--accent);display:block;margin-bottom:6px}
+.step b{display:block;margin-bottom:4px}.step span{color:var(--muted);font-size:.95rem}
+.old{display:grid;grid-template-columns:190px 1fr;gap:6px 32px;padding:12px 0;border-top:1px solid var(--line)}
+.old b{font-weight:600}.old span{color:var(--muted)}
+.about p{max-width:68ch;margin:0 0 14px}
+.sub{color:var(--muted);margin:-14px 0 24px;max-width:62ch}
 </style>
 </head>
 <body>
 <div class="wrap">
 <header class="top">
 <a class="brand" href="#top">Rakesh Kurmi</a>
-<nav aria-label="Sections"><a href="#experience">Experience</a><a href="#expertise">Expertise</a><a href="#credentials">Credentials</a><a href="#contact">Contact</a></nav>
+<nav aria-label="Sections"><a href="#about">About</a><a href="#experience">Experience</a><a href="#expertise">Expertise</a><a href="#credentials">Credentials</a><a href="#contact">Contact</a></nav>
 </header>
-
 <main id="top">
 <div class="hero">
 <h1>Rakesh Kurmi</h1>
-<p class="role">PMP-certified technical lead for cloud and database infrastructure</p>
-<p class="lede">14+ years designing, migrating and running secure SQL Server and cloud environments for enterprises in manufacturing, oil and gas, media, FMCG and banking.</p>
-<div class="cta">
-<a class="btn p" href="mailto:kurmi2rakesh@gmail.com">Email me</a>
-<a class="btn s" href="https://www.linkedin.com/in/rakeshkurmi" rel="noopener">View LinkedIn</a>
+<p class="role">PMP-certified Technical Transition &amp; Migration Delivery Lead</p>
+<p class="lede">14+ years leading database, cloud and IT service transitions for enterprise clients. I combine hands-on SQL Server, Azure and AWS depth with formal governance, so high-stakes cutovers land on time, on budget and without business disruption.</p>
+<div class="cta"><a class="btn p" href="mailto:kurmi2rakesh@gmail.com">Email me</a><a class="btn s" href="https://www.linkedin.com/in/rakeshkurmi" rel="noopener">View LinkedIn</a></div>
+<div class="uptime" aria-label="Availability target of 99.9 percent"><p>Backup and restore policies I have run to a 99.9% availability target</p><div class="bars" id="bars" aria-hidden="true"></div></div>
 </div>
-<div class="uptime" aria-label="Availability target of 99.9 percent">
-<p>Backup and restore policies I've run to a 99.9% availability target</p>
-<div class="bars" id="bars" aria-hidden="true"></div>
-</div>
-</div>
+
+<section id="about" class="about">
+<h2>About</h2>
+<p>I started as a SQL Server DBA in 2012 and grew into leading teams of up to 25 engineers across nine engagements. The common thread is continuity: keeping critical systems available while everything around them changes, whether that is a move from AWS to Azure, a tenant-to-tenant consolidation, or a handover between outgoing and incoming service teams.</p>
+<p>I report to senior manager, DGM and AVP level stakeholders and act as the technical anchor between engineering, clients and programme governance. I work across Waterfall, Agile/Scrum and hybrid methods, and I mentor junior DBAs into leads.</p>
+</section>
 
 <section>
 <h2>Results from recent roles</h2>
 <div class="stats">
 <div><b>50+</b><span>enterprise databases migrated to Azure, cutting infrastructure cost by 20%</span></div>
-<div><b>25%</b><span>fewer downtime incidents through automated monitoring</span></div>
-<div><b>12</b><span>engineers led, with delivery timelines improved by 30%</span></div>
-<div><b>40%</b><span>less manual workload through backup and maintenance automation</span></div>
+<div><b>15 days</b><span>ahead of schedule on a multi-client transition, with 100% milestone adherence</span></div>
+<div><b>99.9%</b><span>availability sustained during and after migration</span></div>
+<div><b>40%</b><span>less manual workload through PowerShell backup and maintenance automation</span></div>
+<div><b>30%</b><span>faster delivery using standard playbooks, runbooks and validation checklists</span></div>
+<div><b>25</b><span>engineers led at peak, from a first team of 2</span></div>
+</div>
+</section>
+
+<section>
+<h2>How I run a transition</h2>
+<p class="sub">The same four stages on every engagement, from planning to lessons learned.</p>
+<div class="step">
+<div><b>Plan</b><span>Transition strategy, resource roster, RAID log, runbooks and migration playbooks.</span></div>
+<div><b>Transfer</b><span>Knowledge transfer between outgoing and incoming teams, with SLA and performance metrics tracked.</span></div>
+<div><b>Cut over</b><span>Governance checkpoints and pre-cutover validation for zero business disruption.</span></div>
+<div><b>Close</b><span>Post-transition review, change documentation and lessons learned.</span></div>
 </div>
 </section>
 
 <section id="experience">
 <h2>Experience</h2>
-<div class="job"><div class="when">Jun 2025 – Feb 2026</div><div>
-<h3>Sr Team Lead</h3><p class="co">NTT DATA, Mumbai</p>
-<ul><li>Led IT service transitions with zero business disruption, using governance frameworks and risk strategies.</li>
-<li>Implemented log shipping with successful switch over and switch back; supported Always On and clustering.</li>
-<li>Mentored junior DBAs, reducing incident resolution time by 30%.</li>
-<li>Ran Agile ceremonies that lifted team productivity by 20%.</li></ul></div></div>
+<div class="job"><div class="when">Jun 2025 – Feb 2026</div><div><h3>Senior Team Lead / Project Coordinator</h3><p class="co">NTT DATA · team of 25 · SQL Server</p>
+<ul><li>Delivered a multi-client database and service-delivery transition 15 days early with a detailed plan, resource roster and daily milestone tracking.</li>
+<li>Cut operational costs by 12% by reallocating resources across parallel workstreams.</li>
+<li>Raised team productivity by 20% with Agile ceremonies and velocity tracking.</li>
+<li>Implemented log shipping with a successful switch over and switch back, and supported Always On and clustering.</li>
+<li>Mentored junior DBAs, reducing incident resolution time by 30%.</li></ul></div></div>
 
-<div class="job"><div class="when">Dec 2020 – Jun 2025</div><div>
-<h3>Sr Technical Lead, Cloud & Infra Engineering</h3><p class="co">Birlasoft, Mumbai</p>
-<ul><li>Directed database migrations across Azure tenants and from AWS to Azure.</li>
-<li>Enforced backup and restore policies that achieved 99.9% availability.</li>
-<li>Strengthened database security to meet 100% compliance with industry standards.</li>
-<li>Oversaw service delivery for critical IT systems supporting 5,000+ users and cut incident resolution time by 40%.</li>
-<li>Introduced proactive capacity planning that saved ₹15M in downtime costs.</li></ul></div></div>
+<div class="job"><div class="when">Dec 2020 – Jun 2025</div><div><h3>Senior Team Lead, Cloud &amp; Infrastructure Engineering</h3><p class="co">Birlasoft · team of 15 · SQL Server, Azure, AWS</p>
+<ul><li>Migrated 50+ enterprise databases across Azure tenants and from AWS to Azure, cutting infrastructure cost by 20% through consolidation and right-sizing.</li>
+<li>Led the 3D Systems database support engagement (Dec 2021 – Oct 2022), including SQL Server moves between Azure tenants.</li>
+<li>Improved delivery timelines by 30% with standard migration playbooks and pre-cutover checklists.</li>
+<li>Reduced manual workload by 40% through backup and maintenance automation.</li>
+<li>Achieved 99.9% availability by enforcing backup and restore policies, and handled monthly production-to-non-production refreshes within SLAs.</li></ul></div></div>
 
-<div class="job"><div class="when">Dec 2018 – Nov 2020</div><div>
-<h3>Senior DBA, MS SQL</h3><p class="co">LTIMindtree, Navi Mumbai</p>
-<ul><li>Administered 100+ SQL databases and cut query times by 40%.</li>
-<li>Designed backup and recovery strategies with zero data loss incidents.</li>
-<li>Provided 24/7 support and reduced downtime incidents by 25%.</li></ul></div></div>
+<div class="job"><div class="when">Dec 2018 – Nov 2020</div><div><h3>Senior Administrator, MS SQL</h3><p class="co">LTIMindtree · team of 8 · Viacom CBS account</p>
+<ul><li>Delivered the Viacom CBS project 10% under budget by optimising resources and negotiating vendor scopes.</li>
+<li>Raised SLA adherence to 98% and cut downtime incidents by 25% through high availability and incident playbooks.</li>
+<li>Provided 24/7 support for 100+ databases, with zero data loss incidents.</li></ul></div></div>
 
-<div class="job"><div class="when">Aug 2017 – Nov 2018</div><div>
-<h3>Sr. DBA</h3><p class="co">HHAeXchange, Ahmedabad</p>
-<ul><li>Migrated legacy databases to modern SQL environments, improving reliability by 30%.</li>
-<li>Delivered analytics dashboards used by 200+ stakeholders.</li></ul></div></div>
+<div class="job"><div class="when">Aug 2017 – Nov 2018</div><div><h3>Sr. DBA</h3><p class="co">Excellence Infocom · team of 5 · HHAeXchange (US) support</p>
+<ul><li>Cut backup failures by 35% through automated backup and maintenance policies, and moved backups to AWS S3.</li>
+<li>Reduced client onboarding time by 25% with standard role-based access for new environments.</li></ul></div></div>
 
-<div class="job"><div class="when">Jan 2013 – Jul 2017</div><div>
-<h3>SQL Server DBA</h3><p class="co">KPIT, Nelito Systems, Technolet Solutions</p>
-<ul><li>Kept mission-critical applications at 99.9% uptime with log shipping and database mirroring.</li>
-<li>Supported 50+ client databases and cut storage costs by 15% through optimization.</li></ul></div></div>
+<div class="job"><div class="when">Oct 2015 – Jul 2017</div><div><h3>Associate DBA</h3><p class="co">KPIT Technologies · team of 5 · SQL Server, Oracle</p>
+<ul><li>Cut replication errors by 40% on Oracle-to-SQL Server replication and built SQL Server clusters for high availability.</li>
+<li>Delivered a SQL Server 2008 to 2012 migration 10 days early.</li></ul></div></div>
+
+<h3 style="margin:28px 0 6px;font-size:1.1rem">Earlier roles</h3>
+<div class="old"><b>2014 – 2015</b><span>SQL DBA consultant, Nelito Systems. Log shipping and mirroring for disaster recovery, 99% uptime.</span></div>
+<div class="old"><b>2012 – 2013</b><span>SQL DBA consultant, Technolet Solutions. 25% performance gain through query tuning.</span></div>
+<div class="old"><b>2012</b><span>IT Security &amp; Surveillance Executive, Angel Broking. Login and IP audits improved compliance by 20%.</span></div>
 </section>
 
 <section id="expertise">
 <h2>Expertise</h2>
 <div class="cols">
-<div><h3>Database and cloud</h3><ul class="tags"><li>MS SQL Server</li><li>Azure</li><li>AWS</li><li>Cloud migration</li><li>Always On</li><li>Log shipping</li><li>Backup policy</li><li>Capacity management</li><li>Database audits</li><li>Patching</li></ul></div>
-<div><h3>Leadership</h3><ul class="tags"><li>Project management</li><li>IT management</li><li>Crisis management</li><li>Resource management</li><li>Service transition</li><li>Agile</li><li>Stakeholder management</li><li>Team mentoring</li></ul></div>
-<div><h3>Industries</h3><ul class="tags"><li>Manufacturing</li><li>Oil & Gas</li><li>Media</li><li>FMCG</li><li>Banking</li></ul></div>
+<div><h3>Delivery and governance</h3><ul class="tags"><li>Transition management</li><li>Scope and change control</li><li>RAID logs</li><li>Schedule and budget</li><li>Executive reporting</li><li>Vendor management</li><li>24/7 shift rostering</li><li>Agile / Scrum / Hybrid</li><li>Team building</li></ul></div>
+<div><h3>Cloud and database</h3><ul class="tags"><li>Azure tenant migration</li><li>AWS to Azure</li><li>SQL Server 2005–2019</li><li>Always On</li><li>Clustering</li><li>Log shipping</li><li>Mirroring</li><li>Replication</li><li>Disaster recovery</li><li>Backup policy</li><li>Databases up to 2 TB+</li></ul></div>
+<div><h3>Tools</h3><ul class="tags"><li>JIRA</li><li>Confluence</li><li>MS Project</li><li>ServiceNow / ITSM</li><li>PowerShell</li><li>VMware</li></ul></div>
 </div>
+<h3 style="margin:32px 0 10px;font-size:1.1rem">Selected engagements</h3>
+<ul class="tags"><li>3D Systems</li><li>PACCAR</li><li>Viacom CBS</li><li>HHAeXchange</li><li>J.D. Irving</li><li>NovaCare</li><li>Seadrill</li><li>Bestseller</li><li>PFN</li><li>Nelito Systems</li></ul>
+<h3 style="margin:28px 0 10px;font-size:1.1rem">Industries</h3>
+<ul class="tags"><li>Manufacturing</li><li>Oil &amp; Gas</li><li>Media</li><li>FMCG</li><li>Banking</li><li>Healthcare IT</li></ul>
 </section>
 
 <section id="credentials">
 <h2>Credentials</h2>
 <div class="cols">
-<div><h3>Certifications</h3><ul><li>Project Management Professional (PMP)</li><li>Microsoft Certified: Azure Fundamentals</li><li>Microsoft Certified MS SQL DBA and Azure Administrator</li><li>AWS Certified Solutions Architect</li><li>Google AI Essentials</li></ul></div>
-<div><h3>Education</h3><ul><li>M.Sc, IT & Management, Vinayaka Mission's Research Foundation (2011–2013)</li><li>B.Sc, Computer Science, Mumbai University (2006–2010)</li></ul></div>
+<div><h3>Certifications</h3><ul><li>Project Management Professional (PMP), PMI</li><li>AWS Certified Solutions Architect, Associate</li><li>AWS Certified Cloud Practitioner</li><li>Microsoft Azure Administrator (AZ-103)</li><li>Microsoft Certified: Azure Fundamentals</li><li>MS SQL Database Administration (Microsoft)</li><li>Google Project Management; Google AI Essentials</li><li>VMware training; Cyber Security in Manufacturing; AI for Everyone</li></ul></div>
+<div><h3>Education</h3><ul><li>M.Sc, IT &amp; Management, Vinayaka Mission’s University (2011–2013)</li><li>B.Sc, Computer Science, Mumbai University (2006–2010)</li></ul></div>
 <div><h3>Languages</h3><ul><li>English, native or bilingual</li><li>Hindi, full professional</li><li>Marathi, professional working</li><li>Telugu, elementary</li></ul></div>
 </div>
 </section>
 
 <section id="contact" class="contact">
-<h2>Let's talk</h2>
-<p>Planning a cloud migration, tightening database availability, or building out an infrastructure team? Get in touch.</p>
-<div class="cta" style="margin-top:0">
-<a class="btn p" href="mailto:kurmi2rakesh@gmail.com">kurmi2rakesh@gmail.com</a>
-<a class="btn s" href="https://www.linkedin.com/in/rakeshkurmi" rel="noopener">linkedin.com/in/rakeshkurmi</a>
-</div>
+<h2>Let’s talk</h2>
+<p>Open to project, programme and delivery leadership roles in cloud migration, database and infrastructure transitions. Based in Navi Mumbai, India.</p>
+<div class="cta" style="margin-top:0"><a class="btn p" href="mailto:kurmi2rakesh@gmail.com">kurmi2rakesh@gmail.com</a><a class="btn s" href="https://www.linkedin.com/in/rakeshkurmi" rel="noopener">linkedin.com/in/rakeshkurmi</a></div>
 </section>
 </main>
-<footer>Mumbai Metropolitan Region, India</footer>
+<footer>© Rakesh Kurmi</footer>
 </div>
 <script>
 (function(){var b=document.getElementById('bars'),h='';for(var i=0;i<60;i++){h+='<i style="--n:'+i+'"'+(i===37?' class="d"':'')+'></i>'}b.innerHTML=h})();
